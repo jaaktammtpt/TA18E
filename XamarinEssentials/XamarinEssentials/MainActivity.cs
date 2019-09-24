@@ -23,6 +23,17 @@ namespace XamarinEssentials
             _batteryLevelTextView.Text = batteryLevel.ToString();
 
             Battery.BatteryInfoChanged += Battery_BatteryInfoChanged;
+
+            var deviceModel = DeviceInfo.Model;
+            var manufactorer = DeviceInfo.Manufacturer;
+            var deviceName = DeviceInfo.Name;
+            var version = DeviceInfo.VersionString;
+            var platform = DeviceInfo.Platform;
+            var idiom = DeviceInfo.Idiom;
+            var deviceType = DeviceInfo.DeviceType;
+
+            System.Diagnostics.Debug.WriteLine("DeviceInfo: {0} , {1}, {2}, {3}, {4}, {5}, {6}",
+            deviceModel, manufactorer, deviceName, version, platform, idiom, deviceType);
         }
 
         private void Battery_BatteryInfoChanged(object sender, BatteryInfoChangedEventArgs e)
