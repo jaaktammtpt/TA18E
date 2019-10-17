@@ -27,7 +27,7 @@ namespace ListExercise
 
             _items = new List<WeatherInfo>()
             {
-                new WeatherInfo(){Name = "Esmaspäev",Temperature = "12c",WindSpeed = "4m/s" },
+                new WeatherInfo(){Name = "Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeesmaspäev",Temperature = "12c",WindSpeed = "4m/s" },
                 new WeatherInfo(){Name = "Teisipäev",Temperature = "11c",WindSpeed = "2m/s" },
                 new WeatherInfo(){Name = "Kolmapäev",Temperature = "9c",WindSpeed = "6m/s" },
                 new WeatherInfo(){Name = "Neljapäev",Temperature = "12c",WindSpeed = "4m/s" },

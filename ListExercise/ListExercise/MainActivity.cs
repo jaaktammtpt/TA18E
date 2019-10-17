@@ -18,7 +18,7 @@ namespace ListExercise
             SetContentView(Resource.Layout.activity_main);
 
             var toListActivityButton = FindViewById<Button>(Resource.Id.listActivityButton);
-            var toSecondListActivityButton = FindViewById<Button>(Resource.Id.listActivityButton);
+            var toSecondListActivityButton = FindViewById<Button>(Resource.Id.secondActivityButton);
 
             toListActivityButton.Click += ToListActivityButton_Click;
             toSecondListActivityButton.Click += ToSecondListActivityButton_Click;
