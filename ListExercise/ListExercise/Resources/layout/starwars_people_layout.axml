@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-	android:orientation="vertical"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<Button
-		android:text="ListActivity button"
+	<EditText
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/listActivityButton" />
+		android:id="@+id/editText1" />
 	<Button
-		android:text="Second List button"
+		android:text="Search"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:id="@+id/button1" />
+	<ListView
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/secondActivityButton" />
-	<Button
-		android:text="StarWars List"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:id="@+id/StarWarsButton" />
+		android:layout_height="match_parent"
+		android:id="@+id/listView1" />
+
 </LinearLayout>

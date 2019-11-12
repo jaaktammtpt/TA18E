@@ -18,12 +18,12 @@ namespace ListExercise
 
         List<WeatherInfo> _items;
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected async override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-            SetContentView(Resource.Layout.second_layout);
+            SetContentView(Resource.Layout.second_layout);           
 
             _items = new List<WeatherInfo>()
             {
@@ -38,7 +38,7 @@ namespace ListExercise
 
             var listView = FindViewById<ListView>(Resource.Id.listView1);
             listView.Adapter = new BasicAdapter(this, _items);
-
-        }
+             
+    }
     }
 }
