@@ -40,8 +40,8 @@ namespace StarwarsApp
             if (view == null)
                 view = _context.LayoutInflater.Inflate(Resource.Layout.films_row_layout, null);
             view.FindViewById<TextView>(Resource.Id.filmNameTextField).Text = item.Title;
-            //view.FindViewById<TextView>(Resource.Id.textView2).Text = item.Height.ToString();
-            //view.FindViewById<TextView>(Resource.Id.textView3).Text = item.Mass.ToString();
+            view.FindViewById<TextView>(Resource.Id.filmTextField2).Text = item.Director;
+            view.FindViewById<TextView>(Resource.Id.filmTextField3).Text = item.Producer;
 
             return view;
         }
